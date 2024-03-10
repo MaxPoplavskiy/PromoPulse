@@ -8,6 +8,7 @@ import XLogo from '../../assets/images/X.png';
 import Sofia from '../../assets/images/407224620_893420559116604_8936711427757346525_n.jfif';
 import styles from './styles.module.scss';
 import { SocialMediaCard } from "./components/social-media-card/social-media-card";
+import { Footer } from "../footer/footer";
 
 function LandingPage() {
     return <>
@@ -65,6 +66,7 @@ function LandingPage() {
         </section>
     </div>
 
+    <Footer />
     </>;
 }
 

@@ -1,10 +1,10 @@
 import styles from './styles.module.scss';
-import Logo from '../../assets/images/logo.png';
+import { FaHeartbeat } from "react-icons/fa";
 
 function Header() {
     return <div className={styles.header__container}>
         <div className={styles.header__logo_container}>
-            <img className={styles.header__logo_image} src={Logo} />
+            <FaHeartbeat className={styles.header__logo_image} />
             <h1 className={styles.header__logo_text}>PromoPulse</h1>
         </div>
 
