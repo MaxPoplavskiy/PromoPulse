@@ -1,5 +1,6 @@
 import styles from './styles.module.scss';
 import { FaHeartbeat } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return <div className={styles.header__container}>
@@ -9,25 +10,31 @@ function Header() {
         </div>
 
         <div className={styles.header__items_container}> 
-            <h2 className={styles.header__item}>
-                Recommendations
-            </h2>
-
-            <h2 className={styles.header__item}>
-                Tik Tok
-            </h2>
-
-            <h2 className={styles.header__item}>
-                Instagram
-            </h2>
-
-            <h2 className={styles.header__item}>
-                Statistics
-            </h2>
-
-            <h2 className={styles.header__item}>
+              <NavLink className={styles.header__item} to='/'>
                 Home
-            </h2>
+            </NavLink>
+
+            <NavLink className={styles.header__item} to='/statistics'>
+                Statistics
+            </NavLink>
+
+            <NavLink className={styles.header__item} to='/planner'>
+                Planner
+            </NavLink>
+
+            <NavLink className={styles.header__item} to='/recommendations'>
+                AI Recomendations
+            </NavLink>
+
+            <NavLink className={styles.header__item} to='/team'>
+                Team
+            </NavLink>
+
+
+           
+
+          
+          
         </div>
     </div>;
 }
