@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 
 type Properties = {
-    icon: string,
+    Icon: React.ElementType,
     image: string,
     comments: string,
     likes: string,
@@ -9,7 +9,7 @@ type Properties = {
 }
 
 function SocialMediaCard({
-    icon,
+    Icon,
     image,
     comments,
     likes,
@@ -17,7 +17,8 @@ function SocialMediaCard({
 }: Properties) {
     return <div className={styles.social_media_card__container}>
         <div>
-            <img src={icon} className={styles.social_media_card__icon}/>
+            {Icon && <Icon className={styles.social_media_card__icon}/>}
+            {/* <img src={icon} className={styles.social_media_card__icon}/> */}
         </div>
 
         <div className={styles.social_media_card__body_container}>
