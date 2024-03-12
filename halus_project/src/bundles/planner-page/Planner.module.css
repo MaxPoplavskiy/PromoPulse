@@ -1,0 +1,41 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.plannerContainer{
+    flex: 1;
+}
+.tasksContainer{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.calendar{
+    width:70%;
+   
+}
+.calendarContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.progressBarContainer{
+    margin: 20px auto;
+
+    width:90%;
+}
+
+.progressBarImg{
+    width:100%;
+
+}
+
+.showMore{
+    background-color: var(--light-gray);
+    border:0;
+}

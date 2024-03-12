@@ -35,9 +35,9 @@ function Header() {
                 AI Recomendations
             </NavLink>
 
-            <NavLink className={buildLinkClass} to='/team'>
+            {/* <NavLink className={buildLinkClass} to='/team'>
                 Team
-            </NavLink>
+            </NavLink> */}
 
 
            

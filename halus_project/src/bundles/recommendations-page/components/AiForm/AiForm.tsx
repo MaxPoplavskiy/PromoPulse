@@ -1,12 +1,7 @@
 import React from 'react'
 import styles from './AiForm.module.css'
 
-// interface AiFormProps{
-//   onSubmit: function
-   
-// }
-// 
-interface SubmitFunction {
+ interface SubmitFunction {
   (event: React.FormEvent<HTMLFormElement>): void; // Define the function signature
 }
 
