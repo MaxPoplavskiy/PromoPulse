@@ -1,4 +1,3 @@
-import React from 'react'
 import { Footer } from "../footer/footer"
 import { Header } from "../header/header"
 import { Task } from './components/Task/Task'
