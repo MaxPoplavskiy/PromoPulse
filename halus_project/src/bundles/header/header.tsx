@@ -1,6 +1,15 @@
 import styles from './styles.module.scss';
 import { FaHeartbeat } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import clsx from 'clsx';
+
+interface BuildLinkClassProps {
+  isActive: boolean;
+}
+
+const buildLinkClass = ({ isActive }: BuildLinkClassProps): string => {
+  return clsx(styles.header__item, isActive && styles.header__item__active);
+};
 
 function Header() {
     return <div className={styles.header__container}>
@@ -10,23 +19,23 @@ function Header() {
         </div>
 
         <div className={styles.header__items_container}> 
-              <NavLink className={styles.header__item} to='/'>
+              <NavLink className={buildLinkClass} to='/'>
                 Home
             </NavLink>
 
-            <NavLink className={styles.header__item} to='/statistics'>
+            <NavLink className={buildLinkClass} to='/statistics'>
                 Statistics
             </NavLink>
 
-            <NavLink className={styles.header__item} to='/planner'>
+            <NavLink className={buildLinkClass} to='/planner'>
                 Planner
             </NavLink>
 
-            <NavLink className={styles.header__item} to='/recommendations'>
+            <NavLink className={buildLinkClass} to='/recommendations'>
                 AI Recomendations
             </NavLink>
 
-            <NavLink className={styles.header__item} to='/team'>
+            <NavLink className={buildLinkClass} to='/team'>
                 Team
             </NavLink>
 

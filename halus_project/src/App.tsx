@@ -6,6 +6,7 @@ import {RecommendationsPage} from './bundles/recommendations-page/Recommendation
 import {PlannerPage} from './bundles/planner-page/PlannerPage'
 import { StatisticPage } from './bundles/statistic-page/StatisticPage'
 import { TeamPage } from './bundles/team-page/TeamPage'
+import { NotFoundPage } from './bundles/not-found-page/NotFoundPage'
 
 function App() {
   return <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
       <Route path={ApiRoutes.STATISTIC} element={<StatisticPage />} />
       <Route path={ApiRoutes.PLANNER} element={<PlannerPage />} />
       <Route path={ApiRoutes.TEAM} element={<TeamPage />} />
+       <Route path='*' element={<NotFoundPage />} />
     </Routes>
   </BrowserRouter>
 }
