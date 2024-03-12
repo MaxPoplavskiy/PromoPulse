@@ -1,7 +1,8 @@
 import { Header } from "../header/header";
 import Sofia from '../../assets/images/407224620_893420559116604_8936711427757346525_n.jfif';
-import Tomat from '../../assets/images/tomat.jpg';
-import HelloKitty from '../../assets/images/zagreb-croatia-november-6-2014-260nw-231255148.png';
+
+import TikTokBanner from '../../assets/images/tiktokbanner.png'
+import InstagramBanner from '../../assets/images/instagrambanner.png'
 import styles from './styles.module.scss';
 import { Footer } from "../footer/footer";
 import { CgProfile } from "react-icons/cg";
@@ -21,10 +22,11 @@ function LandingPage() {
                 Your pulse of success in the digital world!
                 </h3>
 
-                <p className={styles.intro__text}>
-                    Створюйте контент, плануйте, захоплюйте! 
-                    <br />
-                    Вдосконалюйте ваші стратегії у соціальних мережах!
+                    <p className={styles.intro__text}>
+                        Create content, plan, capture, inspire!
+                         <br />
+                        Improve your social media strategies with us!
+                   
                 </p>
                 <div className={styles.intro__button_container}>
                     <button className={styles.button_red}>Start now</button>
@@ -37,7 +39,7 @@ function LandingPage() {
             <div className={styles.landing_page__cards_container}>
                 <div className={styles.landing_page__template_card}>
                     <div className={styles.template_card__image_container}>
-                        <img src={Tomat} className={styles.template_card__image} />
+                        <img src={TikTokBanner} className={styles.template_card__image} />
                     </div>
                     <div className={styles.template_card__content}>
                         <div className={styles.template_card__content_upper_body}>
@@ -64,7 +66,7 @@ function LandingPage() {
 
                 <div className={styles.landing_page__template_card}>
                     <div className={styles.template_card__image_container}>
-                        <img src={HelloKitty} className={styles.template_card__image} />
+                        <img src={InstagramBanner} className={styles.template_card__image} />
                     </div>
                     <div className={styles.template_card__content}>
                         <div className={styles.template_card__content_upper_body}>

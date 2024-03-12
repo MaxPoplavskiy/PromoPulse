@@ -1,13 +1,14 @@
 import styles from './styles.module.scss';
-import TikTok from '../../assets/images/tiktok.png';
-import Instagram from '../../assets/images/instagram.png';
-import XLogo from '../../assets/images/X.png';
+import { PiTiktokLogo } from "react-icons/pi";
+import { SiInstagram } from "react-icons/si";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 function Footer() {
     return <div className={styles.footer__container}>
-        <img src={TikTok} />
-        <img src={Instagram} />
-        <img src={XLogo} />
+        <PiTiktokLogo className={styles.logo} />
+        <SiInstagram className={styles.logo} />
+        <FaXTwitter className={styles.logo}/>
     </div>;
 }
 

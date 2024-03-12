@@ -1,7 +1,12 @@
+import { Footer } from "../footer/footer"
+import { Header } from "../header/header"
+
 export function TeamPage() {
   return (
-    <div>
-      Team
+      <div>
+          <Header />
+          Team
+          <Footer/>
     </div>
   )
 }

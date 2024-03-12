@@ -32,5 +32,14 @@
 }
 
 .header__item {
-    font-size: 16px;
+    font-size: 18px;
+    color:#302e2e;
+}
+
+.header__item:hover{
+    color: red;
+}
+
+.header__item__active{
+    color:red;
 }

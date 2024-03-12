@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 
 type Properties = {
-    icon: string,
+    Icon: React.ElementType,
     image: string,
     comments: string,
     likes: string,
@@ -9,7 +9,7 @@ type Properties = {
 }
 
 function SocialMediaCard({
-    icon,
+    Icon,
     image,
     comments,
     likes,
@@ -17,7 +17,8 @@ function SocialMediaCard({
 }: Properties) {
     return <div className={styles.social_media_card__container}>
         <div>
-            <img src={icon} className={styles.social_media_card__icon}/>
+            {Icon && <Icon className={styles.social_media_card__icon}/>}
+            {/* <img src={icon} className={styles.social_media_card__icon}/> */}
         </div>
 
         <div className={styles.social_media_card__body_container}>
@@ -27,19 +28,19 @@ function SocialMediaCard({
 
             <div className={styles.social_media_card__item}>
                 <h3 className={styles.social_media_card__item_title}>{comments}</h3>
-                <p>Кількість коментів</p>
+                <p>Comments</p>
             </div>
 
             
             <div className={styles.social_media_card__item}>
                 <h3 className={styles.social_media_card__item_title}>{likes}</h3>
-                <p>Лайків за тиждень</p>
+                <p>Likes this week</p>
             </div>
 
             
             <div className={styles.social_media_card__item}>
                 <h3 className={styles.social_media_card__item_title}>{AIRating}</h3>
-                <p>Аналітична оцінки від ШІ</p>
+                <p>AI analitic score</p>
             </div>
         </div>
     </div>

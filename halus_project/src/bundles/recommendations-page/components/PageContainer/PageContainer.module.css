@@ -1,0 +1,14 @@
+.container {
+  width: 70%;
+  padding: 20px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+}
+
+.title {
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgb(255, 0, 0);
+  font-size: 44px;
+}

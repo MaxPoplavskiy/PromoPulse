@@ -1,8 +1,10 @@
 import { SocialMediaCard } from "./components/social-media-card";
-import TikTok from '../../assets/images/tiktok.png';
-import Instagram from '../../assets/images/instagram.png';
-import XLogo from '../../assets/images/X.png';
+
 import Sofia from '../../assets/images/407224620_893420559116604_8936711427757346525_n.jfif';
+
+import { PiTiktokLogo } from "react-icons/pi";
+import { SiInstagram } from "react-icons/si";
+import { FaXTwitter } from "react-icons/fa6";
 
 import styles from './styles.module.scss';
 import Chart from "react-google-charts";
@@ -37,7 +39,7 @@ export function StatisticPage() {
               <Chart
                 className={styles.statistics_page__chart}
                 chartType="LineChart"
-                height="300px"
+                height="334px"
                 data={data}
                 options={options}
               />
@@ -51,9 +53,9 @@ export function StatisticPage() {
       </section>
 
       <section className={styles.statistics_page__social_media_container}>
-          <SocialMediaCard icon={TikTok} image={Sofia} comments="10" likes="50" AIRating="10/10" />
-          <SocialMediaCard icon={Instagram} image={Sofia} comments="3" likes="51" AIRating="10/10"/>
-          <SocialMediaCard icon={XLogo} image={Sofia} comments="3" likes="52" AIRating="10/10"/>
+          <SocialMediaCard Icon={PiTiktokLogo} image={Sofia} comments="10" likes="50" AIRating="10/10" />
+          <SocialMediaCard Icon={SiInstagram} image={Sofia} comments="3" likes="51" AIRating="10/10"/>
+          <SocialMediaCard Icon={FaXTwitter} image={Sofia} comments="3" likes="52" AIRating="10/10"/>
       </section>
     <Footer />
     </>
