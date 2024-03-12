@@ -3,6 +3,8 @@ import TikTok from '../../assets/images/tiktok.png';
 import Instagram from '../../assets/images/instagram.png';
 import XLogo from '../../assets/images/X.png';
 import Sofia from '../../assets/images/407224620_893420559116604_8936711427757346525_n.jfif';
+import Tomat from '../../assets/images/tomat.jpg';
+import HelloKitty from '../../assets/images/zagreb-croatia-november-6-2014-260nw-231255148.png';
 import styles from './styles.module.scss';
 import { SocialMediaCard } from "./components/social-media-card/social-media-card";
 import { Footer } from "../footer/footer";
@@ -38,12 +40,13 @@ function LandingPage() {
         <section className={styles.landing_page__templates}>
             <div className={styles.landing_page__cards_container}>
                 <div className={styles.landing_page__template_card}>
-                    <div className={styles.template_card__image_purple}>
+                    <div className={styles.template_card__image_container}>
+                        <img src={Tomat} className={styles.template_card__image} />
                     </div>
                     <div className={styles.template_card__content}>
                         <div className={styles.template_card__content_upper_body}>
-                            <div className={styles.template_card__avatar}>
-
+                            <div className={styles.template_card__avatar_container}>
+                                <img src={Sofia} className={styles.template_card__avatar}/>
                             </div>
                             <div className={styles.template_title_container}>
                                 <h2 className={styles.template_title}>
@@ -64,12 +67,13 @@ function LandingPage() {
                 </div>
 
                 <div className={styles.landing_page__template_card}>
-                    <div className={styles.template_card__image_blue}>
+                    <div className={styles.template_card__image_container}>
+                        <img src={HelloKitty} className={styles.template_card__image} />
                     </div>
                     <div className={styles.template_card__content}>
                         <div className={styles.template_card__content_upper_body}>
-                            <div className={styles.template_card__avatar}>
-
+                            <div className={styles.template_card__avatar_container}>
+                                <img src={Sofia} className={styles.template_card__avatar}/>
                             </div>
                             <div className={styles.template_title_container}>
                                 <h2 className={styles.template_title}>

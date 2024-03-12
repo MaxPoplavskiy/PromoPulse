@@ -56,7 +56,8 @@
 .landing_page__cards_container {
     width: 70%;
     margin: 100px 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 6fr 6fr 1fr;
     gap: 100px;
 }
 
@@ -90,14 +91,11 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: 100%;
+    background-color: white;
 }
 
-.template_card__image_purple {
-    background-color: #B892F2;
-}
-
-.template_card__image_blue {
-    background-color: blue;
+.template_card__image {
+    width: 100%;
 }
 
 .template_card__content {
@@ -114,11 +112,14 @@
     gap: 30px;
 }
 
+.template_card__avatar_container {
+    width: 90px;
+}
+
 .template_card__avatar {
-    width: 75px;    
-    height: 75px;
-    background-color: var(--red);
-    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
 }
 
 .styles.template_title {
