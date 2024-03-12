@@ -1,6 +1,11 @@
 :root {
   --light-gray: #d9d9d9;
   --dark-gray: #232222;
+  --red: #FF3131;
+  --dark-red: #B22323;
+  --dark-red-background: #51272a;
+  --red-background: #972c32;
+  --transparent-black: #00000099;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -14,6 +19,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -52,17 +58,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
