@@ -1,12 +1,8 @@
 import { Header } from "../header/header";
-import TikTok from '../../assets/images/tiktok.png';
-import Instagram from '../../assets/images/instagram.png';
-import XLogo from '../../assets/images/X.png';
 import Sofia from '../../assets/images/407224620_893420559116604_8936711427757346525_n.jfif';
 import Tomat from '../../assets/images/tomat.jpg';
 import HelloKitty from '../../assets/images/zagreb-croatia-november-6-2014-260nw-231255148.png';
 import styles from './styles.module.scss';
-import { SocialMediaCard } from "./components/social-media-card/social-media-card";
 import { Footer } from "../footer/footer";
 import { CgProfile } from "react-icons/cg";
 
@@ -119,12 +115,6 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section className={styles.landing_page__social_media_container}>
-            <SocialMediaCard icon={TikTok} image={Sofia} comments="10" likes="50" AIRating="10/10" />
-            <SocialMediaCard icon={Instagram} image={Sofia} comments="3" likes="51" AIRating="10/10"/>
-            <SocialMediaCard icon={XLogo} image={Sofia} comments="3" likes="52" AIRating="10/10"/>
         </section>
     </div>
 
