@@ -9,6 +9,8 @@
 
 .statistics_page__statistics_title {
     margin-right: auto;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgb(66, 66, 66);
 }
 
 .statistics_page__chart_container {
@@ -17,7 +19,9 @@
 }
 
 .statistics_page__line_chart_container {
-    width: 50%;
+    width: 60%;
+border-radius: 8px;
+overflow: hidden;
 }
 
 .statistics_page__calendar {

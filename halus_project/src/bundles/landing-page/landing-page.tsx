@@ -21,10 +21,11 @@ function LandingPage() {
                 Your pulse of success in the digital world!
                 </h3>
 
-                <p className={styles.intro__text}>
-                    Створюйте контент, плануйте, захоплюйте! 
-                    <br />
-                    Вдосконалюйте ваші стратегії у соціальних мережах!
+                    <p className={styles.intro__text}>
+                        Create content, plan, capture, inspire!
+                         <br />
+                        Improve your social media strategies with us!
+                   
                 </p>
                 <div className={styles.intro__button_container}>
                     <button className={styles.button_red}>Start now</button>

@@ -9,7 +9,7 @@
 
 .input {
   width: 100%;
-  border-radius: 0px;
+  border-radius: 4px 0px 0px 4px;
   outline: none;
   border: 1px solid grey;
   padding-left: 8px;
@@ -20,7 +20,7 @@
   background-color: red;
   color: white;
   border-radius: 0 4px 4px 0;
-  border: 1px solid red;
+  border: 1px solid #c03838;
 }
 
 .btn:hover,

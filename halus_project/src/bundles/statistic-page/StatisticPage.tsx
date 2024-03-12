@@ -39,7 +39,7 @@ export function StatisticPage() {
               <Chart
                 className={styles.statistics_page__chart}
                 chartType="LineChart"
-                height="300px"
+                height="334px"
                 data={data}
                 options={options}
               />
