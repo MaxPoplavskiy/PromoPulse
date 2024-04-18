@@ -4,7 +4,9 @@ enum ApiRoutes {
     TEAM = '/team',
     STATISTIC = '/statistics',
     PLANNER='/planner',
-    ACCOUNT='/account'
+    ACCOUNT='/account',
+    SIGN_UP='/sign-up',
+    SIGN_IN='/sign-in',
 }
 
 export { ApiRoutes };

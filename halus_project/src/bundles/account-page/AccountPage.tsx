@@ -5,7 +5,8 @@ export function AccountPage() {
   return (
       <div>
           <Header />
-          Account
+            <input placeholder="Email"></input>
+            <input placeholder="Email"></input>
           <Footer/>
     </div>
   )

@@ -8,6 +8,8 @@ import { StatisticPage } from './bundles/statistic-page/StatisticPage'
 import { TeamPage } from './bundles/team-page/TeamPage'
 import { NotFoundPage } from './bundles/not-found-page/NotFoundPage'
 import { AccountPage } from './bundles/account-page/AccountPage'
+import { SignInPage } from './bundles/auth/pages/SignInPage'
+import { SignUpPage } from './bundles/auth/pages/SignUpPage'
 
 function App() {
   return <BrowserRouter>
@@ -17,6 +19,8 @@ function App() {
       <Route path={ApiRoutes.STATISTIC} element={<StatisticPage />} />
       <Route path={ApiRoutes.PLANNER} element={<PlannerPage />} />
       <Route path={ApiRoutes.TEAM} element={<TeamPage />} />
+      <Route path={ApiRoutes.SIGN_IN} element={<SignInPage />} />
+      <Route path={ApiRoutes.SIGN_UP} element={<SignUpPage />} />
       <Route path={ApiRoutes.ACCOUNT} element={<AccountPage />} />
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
