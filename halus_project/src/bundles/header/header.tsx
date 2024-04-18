@@ -2,8 +2,9 @@ import styles from './styles.module.scss';
 import { FaHeartbeat } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
+import { ApiRoutes } from '../common/enums/api-routes';
 
-interface BuildLinkClassProps {
+type BuildLinkClassProps = {
   isActive: boolean;
 }
 
@@ -19,20 +20,24 @@ function Header() {
         </div>
 
         <div className={styles.header__items_container}> 
-              <NavLink className={buildLinkClass} to='/'>
+              <NavLink className={buildLinkClass} to={ApiRoutes.ROOT}>
                 Home
             </NavLink>
 
-            <NavLink className={buildLinkClass} to='/statistics'>
+            <NavLink className={buildLinkClass} to={ApiRoutes.STATISTIC}>
                 Statistics
             </NavLink>
 
-            <NavLink className={buildLinkClass} to='/planner'>
+            <NavLink className={buildLinkClass} to={ApiRoutes.PLANNER}>
                 Planner
             </NavLink>
 
-            <NavLink className={buildLinkClass} to='/recommendations'>
+            <NavLink className={buildLinkClass} to={ApiRoutes.RECOMMENDATIONS}>
                 AI Recomendations
+            </NavLink>
+
+            <NavLink className={buildLinkClass} to={ApiRoutes.ACCOUNT}>
+                Account
             </NavLink>
 
             {/* <NavLink className={buildLinkClass} to='/team'>

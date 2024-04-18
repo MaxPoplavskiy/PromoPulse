@@ -1,9 +1,10 @@
 enum ApiRoutes {
     ROOT = '/',
-    REC = '/recommendations',
+    RECOMMENDATIONS = '/recommendations',
     TEAM = '/team',
     STATISTIC = '/statistics',
-    PLANNER='/planner'
+    PLANNER='/planner',
+    ACCOUNT='/account'
 }
 
 export { ApiRoutes };
