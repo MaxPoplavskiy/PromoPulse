@@ -1,4 +1,4 @@
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 import { FaHeartbeat } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
@@ -34,6 +34,14 @@ function Header() {
 
             <NavLink className={buildLinkClass} to={ApiRoutes.RECOMMENDATIONS}>
                 AI Recomendations
+            </NavLink>
+
+            <NavLink className={buildLinkClass} to={ApiRoutes.SIGN_IN}>
+                Sign In
+            </NavLink>
+
+            <NavLink className={buildLinkClass} to={ApiRoutes.SIGN_UP}>
+                Sign up
             </NavLink>
 
             <NavLink className={buildLinkClass} to={ApiRoutes.ACCOUNT}>

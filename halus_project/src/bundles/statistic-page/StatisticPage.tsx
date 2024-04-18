@@ -6,7 +6,7 @@ import { PiTiktokLogo } from "react-icons/pi";
 import { SiInstagram } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 import Chart from "react-google-charts";
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
