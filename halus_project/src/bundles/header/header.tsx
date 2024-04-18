@@ -1,9 +1,12 @@
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 import { FaHeartbeat } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
+import { AppRoutes } from '../common/enums/app-routes.enum';
+import { useContext } from 'react';
+import { userContext } from '../auth/context/user-context';
 
-interface BuildLinkClassProps {
+type BuildLinkClassProps = {
   isActive: boolean;
 }
 
@@ -12,6 +15,8 @@ const buildLinkClass = ({ isActive }: BuildLinkClassProps): string => {
 };
 
 function Header() {
+    const userContextValue = useContext(userContext);
+
     return <div className={styles.header__container}>
         <div className={styles.header__logo_container}>
             <FaHeartbeat className={styles.header__logo_image} />
@@ -19,21 +24,38 @@ function Header() {
         </div>
 
         <div className={styles.header__items_container}> 
-              <NavLink className={buildLinkClass} to='/'>
+            <NavLink className={buildLinkClass} to={AppRoutes.ROOT}>
                 Home
             </NavLink>
 
-            <NavLink className={buildLinkClass} to='/statistics'>
-                Statistics
-            </NavLink>
+            {userContextValue?.user ?<>
+                    <NavLink className={buildLinkClass} to={AppRoutes.STATISTIC}>
+                        Statistics
+                    </NavLink>
+        
+                    <NavLink className={buildLinkClass} to={AppRoutes.PLANNER}>
+                        Planner
+                    </NavLink>
+        
+                    <NavLink className={buildLinkClass} to={AppRoutes.RECOMMENDATIONS}>
+                        AI Recomendations
+                    </NavLink>
 
-            <NavLink className={buildLinkClass} to='/planner'>
-                Planner
-            </NavLink>
+                    <NavLink className={buildLinkClass} to={AppRoutes.ACCOUNT}>
+                        Account
+                    </NavLink>
+            </>
+            : 
+            <>
+                <NavLink className={buildLinkClass} to={AppRoutes.SIGN_IN}>
+                    Sign In
+                </NavLink>
 
-            <NavLink className={buildLinkClass} to='/recommendations'>
-                AI Recomendations
-            </NavLink>
+                <NavLink className={buildLinkClass} to={AppRoutes.SIGN_UP}>
+                    Sign up
+                </NavLink>
+            </>}
+            
 
             {/* <NavLink className={buildLinkClass} to='/team'>
                 Team

@@ -3,7 +3,7 @@ import Sofia from '../../assets/images/407224620_893420559116604_893671142775734
 
 import TikTokBanner from '../../assets/images/tiktokbanner.png'
 import InstagramBanner from '../../assets/images/instagrambanner.png'
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 import { Footer } from "../footer/footer";
 import { CgProfile } from "react-icons/cg";
 
