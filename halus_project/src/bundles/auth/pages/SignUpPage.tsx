@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Footer } from "../../footer/footer"
 import { Header } from "../../header/header"
 import authApi from "../api/auth.api";
 import styles from './styles.module.css';
+import { userContext } from "../context/user-context";
 
 export function SignUpPage() {
+  const userContextValue = useContext(userContext);
+
   const [name, setName] = useState('');
 
-  function signUp() {
-    authApi.signUp(name);
+  async function signUp() {
+    await authApi.signUp(name);
+    userContextValue?.updateUserFromLocalStorage();
   }
 
   return (
