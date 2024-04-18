@@ -15,6 +15,10 @@ class AuthAPI {
         
         localStorage.setItem(localStorageItem.USER, JSON.stringify(apiUser));
     }
+
+    async logOut() {
+        localStorage.removeItem(localStorageItem.USER);
+    }
 }
 
 export default new AuthAPI;
