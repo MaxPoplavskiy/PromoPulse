@@ -2,7 +2,7 @@ import styles from './styles.module.css';
 import { FaHeartbeat } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
-import { ApiRoutes } from '../common/enums/api-routes';
+import { AppRoutes } from '../common/enums/app-routes.enum';
 
 type BuildLinkClassProps = {
   isActive: boolean;
@@ -20,31 +20,31 @@ function Header() {
         </div>
 
         <div className={styles.header__items_container}> 
-              <NavLink className={buildLinkClass} to={ApiRoutes.ROOT}>
+              <NavLink className={buildLinkClass} to={AppRoutes.ROOT}>
                 Home
             </NavLink>
 
-            <NavLink className={buildLinkClass} to={ApiRoutes.STATISTIC}>
+            <NavLink className={buildLinkClass} to={AppRoutes.STATISTIC}>
                 Statistics
             </NavLink>
 
-            <NavLink className={buildLinkClass} to={ApiRoutes.PLANNER}>
+            <NavLink className={buildLinkClass} to={AppRoutes.PLANNER}>
                 Planner
             </NavLink>
 
-            <NavLink className={buildLinkClass} to={ApiRoutes.RECOMMENDATIONS}>
+            <NavLink className={buildLinkClass} to={AppRoutes.RECOMMENDATIONS}>
                 AI Recomendations
             </NavLink>
 
-            <NavLink className={buildLinkClass} to={ApiRoutes.SIGN_IN}>
+            <NavLink className={buildLinkClass} to={AppRoutes.SIGN_IN}>
                 Sign In
             </NavLink>
 
-            <NavLink className={buildLinkClass} to={ApiRoutes.SIGN_UP}>
+            <NavLink className={buildLinkClass} to={AppRoutes.SIGN_UP}>
                 Sign up
             </NavLink>
 
-            <NavLink className={buildLinkClass} to={ApiRoutes.ACCOUNT}>
+            <NavLink className={buildLinkClass} to={AppRoutes.ACCOUNT}>
                 Account
             </NavLink>
 

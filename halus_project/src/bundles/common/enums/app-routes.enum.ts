@@ -1,4 +1,4 @@
-enum ApiRoutes {
+enum AppRoutes {
     ROOT = '/',
     RECOMMENDATIONS = '/recommendations',
     TEAM = '/team',
@@ -9,4 +9,4 @@ enum ApiRoutes {
     SIGN_IN='/sign-in',
 }
 
-export { ApiRoutes };
+export { AppRoutes };
