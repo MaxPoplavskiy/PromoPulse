@@ -7,8 +7,6 @@ import styles from './styles.module.css';
 export function SignUpPage() {
   const [name, setName] = useState('');
 
-
-
   function signUp() {
     authApi.signUp(name);
   }

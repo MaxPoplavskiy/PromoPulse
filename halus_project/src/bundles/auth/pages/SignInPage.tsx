@@ -1,11 +1,16 @@
+import { useContext } from "react";
 import { Footer } from "../../footer/footer"
 import { Header } from "../../header/header"
 import authApi from "../api/auth.api";
 import styles from './styles.module.css';
+import { userContext } from "../context/user-context";
 
 export function SignInPage() {
-  function signIn() {
-    authApi.signIn();
+  const userContextValue = useContext(userContext);
+
+  async function signIn() {
+    await authApi.signIn();
+    userContextValue?.updateUserFromLocalStorage();
   }
 
   return (
