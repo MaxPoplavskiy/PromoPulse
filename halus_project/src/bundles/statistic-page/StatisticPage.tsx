@@ -13,14 +13,8 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
+import { useEffect, useState } from "react";
 
-const data = [
-  ["Year", "Views"],
-  ["2004", 1000],
-  ["2005", 1170],
-  ["2006", 660],
-  ["2007", 1030],
-];
 
 const options = {
   title: "Views",
@@ -29,6 +23,21 @@ const options = {
 };
 
 export function StatisticPage() {
+  const [data, setData] = useState<[number | string, number | string][]>([["Year", "Views"]]);
+
+  useEffect(() => {
+    const date = new Date();
+    date.setFullYear(date.getFullYear() - 1)
+
+    const today = new Date();
+
+    while (date <= today) {
+      const dateString = date.toLocaleString('en-US', { month: 'short', year: 'numeric' });
+
+      setData(d => [...d, [dateString, 10000 * Math.random()]])
+      date.setMonth(date.getMonth() + 1);
+    }
+  }, [])
   return (<>
   <Header />
       <section className={styles.statistics_page__statistics_container}>
