@@ -1,13 +1,17 @@
 import styles from './Task.module.css'
 import { CgProfile } from "react-icons/cg";
 
+type Properties = {
+  taskName?: string,
+  due: string
+}
 
-export function Task() {
+export function Task({taskName, due}: Properties) {
   return (
     <div className={styles.taskContainer}>
         <div className={styles.taskInfo}>
-              <p className={styles.taskName}>Review text for nex post by Sunday</p>
-              <p className={styles.taskDeadline}>Due date: December 23, 2018</p>
+              <p className={styles.taskName}>{taskName}</p>
+              <p className={styles.taskDeadline}>Due: {due}</p>
 
               <div className={styles.authorContainer}>
                   <CgProfile className={styles.emptyPicture} />
