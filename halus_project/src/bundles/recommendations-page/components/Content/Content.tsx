@@ -10,7 +10,7 @@ export function Content({ text }: ContentProps) {
       <ol className={styles.recs}>
       {text.map((rec: string) => {
         return (
-          <li className={styles.text }>{ rec }</li>
+          <li key={rec} className={styles.text }>{ rec }</li>
         )
       })}
         </ol>

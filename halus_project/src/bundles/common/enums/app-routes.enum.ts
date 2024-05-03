@@ -1,6 +1,6 @@
 enum AppRoutes {
     ROOT = '/',
-    RECOMMENDATIONS = '/recommendations',
+    RECOMMENDATIONS = '/ai',
     TEAM = '/team',
     STATISTIC = '/statistics',
     PLANNER='/planner',

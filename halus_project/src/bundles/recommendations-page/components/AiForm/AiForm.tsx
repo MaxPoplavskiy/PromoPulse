@@ -1,16 +1,15 @@
-import React from 'react'
 import styles from './AiForm.module.css'
 
- interface SubmitFunction {
-  (event: React.FormEvent<HTMLFormElement>): void; // Define the function signature
+type Properties = {
+  onClick: (value: string) => void; // Define the function signature
 }
 
-export function AiForm({ onSubmit }: { onSubmit: SubmitFunction }) {
+export function AiForm({ onClick }: Properties) {
   return (
     <div>
-      <form className={styles.form} onSubmit={(e) => onSubmit(e)}>
-        <input type="text" placeholder="Enter request" className={styles.input} />
-        <button type="submit" className={styles.btn}>Get Started</button>
+      <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
+        <button onClick={() => onClick('monetization')} className={styles.btn}>Analyze monetization</button>
+        <button onClick={() => onClick('audience')} className={styles.btn}>Analyze my audience</button>
       </form>
     </div>
   );

@@ -16,7 +16,9 @@
 }
 
 .btn {
-  width: 200px;
+  width: 150px;
+  font-size: 14px;
+  margin-right: 50px;
   background-color: red;
   color: white;
   border-radius: 0 4px 4px 0;

@@ -38,7 +38,7 @@ function Header() {
                     </NavLink>
         
                     <NavLink className={buildLinkClass} to={AppRoutes.RECOMMENDATIONS}>
-                        AI Recomendations
+                        PromoPulse AI
                     </NavLink>
 
                     <NavLink className={buildLinkClass} to={AppRoutes.ACCOUNT}>
