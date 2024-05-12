@@ -1,5 +1,4 @@
 import { Header } from "../header/header";
-import Sofia from '../../assets/images/407224620_893420559116604_8936711427757346525_n.jfif';
 import woman1 from '../../assets/images/woman-1.jpg';
 import woman2 from '../../assets/images/woman-2.jpg';
 
