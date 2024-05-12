@@ -1,5 +1,7 @@
 import { Header } from "../header/header";
 import Sofia from '../../assets/images/407224620_893420559116604_8936711427757346525_n.jfif';
+import woman1 from '../../assets/images/woman-1.jpg';
+import woman2 from '../../assets/images/woman-2.jpg';
 
 import TikTokBanner from '../../assets/images/tiktokbanner.png'
 import InstagramBanner from '../../assets/images/instagrambanner.png'
@@ -44,20 +46,20 @@ function LandingPage() {
                     <div className={styles.template_card__content}>
                         <div className={styles.template_card__content_upper_body}>
                             <div className={styles.template_card__avatar_container}>
-                                <img src={Sofia} className={styles.template_card__avatar}/>
+                                <img src={woman1} className={styles.template_card__avatar}/>
                             </div>
                             <div className={styles.template_title_container}>
                                 <h2 className={styles.template_title}>
                                     TikTok
                                 </h2>
                                 <p className={styles.template_subtitle}>
-                                    Secondary text
+                                    Short videos
                                 </p>
                             </div>
                         </div>
 
                         <p>
-                            Greyhound divisively hello coldly wonderfully marginally far upon excluding.
+                            A platform for short-form mobile videos that allows users to create and share fun and engaging content.
                         </p>
 
                         <button className={styles.template_card__button_red}>EDIT&nbsp;NOW</button>
@@ -71,20 +73,20 @@ function LandingPage() {
                     <div className={styles.template_card__content}>
                         <div className={styles.template_card__content_upper_body}>
                             <div className={styles.template_card__avatar_container}>
-                                <img src={Sofia} className={styles.template_card__avatar}/>
+                                <img src={woman2} className={styles.template_card__avatar}/>
                             </div>
                             <div className={styles.template_title_container}>
                                 <h2 className={styles.template_title}>
                                     Instagram
                                 </h2>
                                 <p className={styles.template_subtitle}>
-                                    Secondary text
+                                    Live content
                                 </p>
                             </div>
                         </div>
 
                         <p>
-                            Greyhound divisively hello coldly wonderfully marginally far upon excluding.
+                            A social networking service focused on photo and video sharing, offering users a platform to connect and discover visual content from around the world.
                         </p>
 
                         <button className={styles.template_card__button_red}>EDIT&nbsp;NOW</button>
